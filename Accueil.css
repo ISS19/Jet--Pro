@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+@keyframes text{
+    from{
+        color: #000000;
+    }
+    to{
+        color: #771c05;
+    }
+}
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header i:hover{
+    color: rgb(230, 233, 235);
+    transition: .3s;
+}
+.menu{
+    background: linear-gradient(180deg, #c42b05, black, black, black);
+    padding: 5px;
+}
+.header #logo{
+    width: 150px;
+    height: 150px;
+}
+#title{
+    color: #000000;
+    animation-name: text;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

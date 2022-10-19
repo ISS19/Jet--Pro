@@ -1,0 +1,201 @@
+/*Animation fond arriere*/
+
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(230, 233, 235);
+}
+
+.background{
+    background: linear-gradient(310deg, #c42b05, black, black);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.cube{
+    position: absolute;
+    top: 80vh;
+    left: 45vh;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #c42b05;
+    border-radius: 5px;
+    transform-origin: top left;
+    transform: scale(0) rotate(0) translate(-50%,-50%);
+    animation: cube 7s ease-in forwards infinite;
+
+}
+.cube:nth-child(2n){
+    border-color: #c42b05;
+}
+.cube:nth-child(2){
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+.cube:nth-child(3){
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+}
+.cube:nth-child(4){
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+}
+.cube:nth-child(5){
+    animation-delay: 8s;
+    left: 10vw;
+    top: 80vh;
+}
+.cube:nth-child(6){
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+}
+@keyframes cube {
+    from{
+        transform: scale(0) rotate(0deg) translate(-50%, 50%);
+        opacity: 1;
+    } 
+    to{
+        transform: scale(20) rotate(360deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+    
+}
+@keyframes text{
+    from{
+        color: #000000;
+    }
+    to{
+        color: #771c05;
+    }
+}
+
+
+
+
+
+/*------------------------------------Contenu du web------------------------------------------*/
+
+
+#fa-sharp{
+    color: #771c05;
+    margin-left: 80px;
+    -webkit-box-reflect: below 0 linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5));
+}
+.head{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.main{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+#title{
+    background: linear-gradient(to right, #c42b05, #f3f3f3);
+    border-radius: 10px;
+    color: #000000;
+    animation-name: text;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+fieldset{
+    width: 280px;
+    margin-left: 35%;
+    border-radius: 30px;
+    border: 2px inset #c42b05;    
+}
+legend{
+    margin-left: 10%;
+    color: #c42b05;
+}
+option{
+    color: #000000;
+}
+
+
+#val{
+    position: relative;
+    overflow: hidden;
+    width: 80px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    font-family: poppins;
+    font-weight: 900;
+    cursor: pointer;
+    color:#fff;
+    z-index: 0;
+    border: 1px inset #c42b05;
+    text-decoration: none;
+    line-height: 60px;
+    margin: 0 10px;
+    border-radius: 50px;
+    margin-left: 40%;
+}
+
+#val:hover:before{
+    top: 0;
+    border-radius: 0;
+}
+#val:before{
+    content:"";
+    position: absolute;
+    top:60px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #c42b05;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    transition: all .5s;
+}
+#val:hover{
+    color: #1d0701;
+    transition: .7s;
+}
+.inpText{
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #c42b05;
+}
+.inpText:hover{
+    border-bottom: 2px solid #1d0701;
+    transition: .2s;
+}
+
+#nation{
+    background: transparent;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.footer{
+    margin-top: 60px;
+    align-items: center;
+}
+.footer .ico{
+    margin-left: 10px;
+}
+
+:root{
+    color-scheme: white;
+}

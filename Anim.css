@@ -1,0 +1,64 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+
+
+@keyframes ima{
+    from{
+        width:100px;
+        height: 100px;
+    }
+    to{
+        width:300px;
+        height: 300px;
+    }
+}
+@keyframes legAnim{
+    from{
+        color: black;
+    }
+    to{
+        color: #771c05;
+    }
+}
+
+
+.animLegn{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    display: flex;
+}
+img{
+    width: 30%;
+    height: auto;
+    margin-top: 20%;
+    margin-left: 31%;
+    float: left;
+    animation-name: ima;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+.Legn{
+    padding: 0 15px 15px 15px;
+    text-align: center;
+    color: black;
+    margin-right: 30%;
+    margin-top: 23%;
+    animation-name: legAnim;
+    animation-duration: 1.5s;
+    animation-delay: 5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
